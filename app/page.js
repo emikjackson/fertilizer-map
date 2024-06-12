@@ -1,12 +1,14 @@
-import styles from './page.module.css';
+import './page.css';
 import dynamic from 'next/dynamic';
 
-const DynamicMap = dynamic(() => import('./Map'), { ssr: false });
+const DynamicMap = dynamic(() => import('../components/Map'), { ssr: false });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <DynamicMap />
+    <main>
+      <div className="large-column">
+        <DynamicMap />
+      </div>
     </main>
   );
 }

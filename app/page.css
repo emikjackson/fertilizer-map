@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.large-column {
+  width: 100%;
+  max-width: var(--column-width);
+}
