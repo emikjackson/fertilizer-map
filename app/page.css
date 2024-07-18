@@ -10,3 +10,8 @@ main {
   width: 100%;
   max-width: var(--column-width);
 }
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}

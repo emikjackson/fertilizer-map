@@ -1,7 +1,7 @@
-import { Inter } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 import './globals.css';
 
-const font = Inter({ subsets: ['latin'] });
+const font = Manrope({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
