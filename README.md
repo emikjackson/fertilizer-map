@@ -2,7 +2,7 @@
 
 Map of USGS estimated nitrogen and phosphorus fertilzer usage from 1950 - 2017. 
 
-Built with React, Next, and [Leaflet](https://leafletjs.com/). 
+Built with React, Next, and [Leaflet](https://leafletjs.com/). Deployed with Vercel.
 
 ### Links and sources:
 
