@@ -6,7 +6,7 @@ import L from 'leaflet';
 
 // main: https://purple.vercel.app/#4/4/47/73/71/-66/9/47/FF7D53/255/125/83
 // deeps: https://purple.vercel.app/#4/4/47/49/71/-41/9/47/871787/135/23/135
-const COLOR_SCALE = [
+export const COLOR_SCALE = [
   '#FFFCA3',
   '#FFE68F',
   '#FFCA7A',
@@ -22,11 +22,11 @@ const COLOR_SCALE = [
   '#0D0264',
 ];
 
-const BASE_SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 8 * 2, 8 * 4, 8 * 6];
+export const BASE_SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 8 * 2, 8 * 4, 8 * 6];
 
 const getScaleByScalar = scalar => BASE_SCALE.map(num => num * scalar);
 
-const KEY_SCALES = {
+export const KEY_SCALES = {
   P: {
     total: 300000,
     farm: 300000,

@@ -1,3 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 5px;
+}
+
+.header > p {
+  font-size: 0.95rem;
+  margin: 0px;
+  font-style: italic;
+  color: var(--text-light);
+}
+
 .selectors {
   display: flex;
   justify-content: space-between;
@@ -60,6 +74,8 @@
 .selection-total p {
   font-size: 1.2rem;
   font-weight: 600;
+  margin: 0px;
+  margin-top: 2px;
 }
 
 .input-wrapper.slider {
@@ -69,4 +85,48 @@
 
 .input-wrapper.slider input {
   margin: 10px 0px;
+}
+
+.full-map-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.key {
+  position: absolute;
+  z-index: 1000;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0px 4px 0px 0px;
+  padding: 5px;
+}
+
+.color-block {
+  width: 15px;
+  height: 15px;
+}
+
+.key-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+  .selectors {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header > p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .dropdowns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

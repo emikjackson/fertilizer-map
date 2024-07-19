@@ -10,6 +10,7 @@ import dataSummary from '@/data/counties_with_fertilizer_summary.json';
 import CountyGeoJSON from './CountyGeoJSON';
 import { manrope } from '@/app/fonts';
 import MapHeader from './MapHeader';
+import MapKey from './MapKey';
 
 const INITIAL_POSITION = [38.850033, -95.6500523];
 
@@ -58,7 +59,7 @@ export default function Map() {
   const zoom = 4.5;
 
   return (
-    <>
+    <div class="full-map-wrapper">
       <MapHeader
         year={year}
         setYear={setYear}
@@ -98,7 +99,7 @@ export default function Map() {
                     </p>
                     <p>
                       {selectedProperties[dataKey]
-                        ? `${selectedProperties[dataKey].toLocaleString()} kgs`
+                        ? `${Math.round(selectedProperties[dataKey] / 1000).toLocaleString()} tons`
                         : 'Unavailable'}
                     </p>
                   </div>
@@ -118,6 +119,7 @@ export default function Map() {
           </>
         )}
       </MapContainer>
-    </>
+      <MapKey summaryType={summaryType} fertType={fertType} />
+    </div>
   );
 }

@@ -1,4 +1,4 @@
-main {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -14,4 +14,25 @@ main {
 ul {
   margin-left: 20px;
   margin-bottom: 10px;
+}
+
+.primary {
+  background-color: var(--bg);
+}
+
+.secondary {
+  background-color: #f7f7f7;
+}
+
+.break {
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+  margin: 20px 0px;
+}
+
+@media (max-width: 800px) {
+  .section.secondary {
+    padding: 2rem 1rem;
+  }
 }
