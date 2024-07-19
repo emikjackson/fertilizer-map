@@ -13,6 +13,8 @@ const getFullKey = (summaryType, fertType) => {
   });
 };
 
+// Display legend of colors used on the map & their associated values, high to low.
+// To be overlayed in lower-left corner of map.
 export default function MapKey({ summaryType, fertType }) {
   const keyArray = getFullKey(summaryType, fertType);
 

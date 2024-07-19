@@ -1,3 +1,4 @@
+import FooterLinks from '@/components/FooterLinks';
 import './page.css';
 import dynamic from 'next/dynamic';
 
@@ -18,7 +19,11 @@ export default function Home() {
             combined total settings over time. Click on a county to view a specific county&apos;s
             values.
           </p>
-          <p>Visualized with Leaflet, data prepared for mapping with Python.</p>
+          <p>
+            <a href="https://github.com/emikjackson/fertilizer-map">Visualized</a> with Leaflet,{' '}
+            <a href="https://github.com/emikjackson/fertilizer-data-prep">data prepared</a> for
+            mapping with Python.
+          </p>
           <div class="break" />
           <p style={{ fontStyle: 'italic' }}>
             Source: Falcone, J.A., 2021, Tabular county-level nitrogen and phosphorus estimates from
@@ -36,9 +41,12 @@ export default function Home() {
         </div>
       </div>
       <div className="section secondary">
-        <div className="large-column">
+        <div className="large-column" style={{ minHeight: '600px' }}>
           <DynamicMap />
         </div>
+      </div>
+      <div className="section primary">
+        <FooterLinks />
       </div>
     </main>
   );

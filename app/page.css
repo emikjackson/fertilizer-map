@@ -31,6 +31,30 @@ ul {
   margin: 20px 0px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer svg {
+  margin-top: 4px;
+}
+
+a.logo {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 2rem;
+  text-shadow: 2px 2px 0px #9bc3ff;
+  transition: text-shadow 0.2s linear;
+  cursor: pointer;
+}
+a.logo:hover {
+  text-shadow: 3px 3px 0px #b7e3ff;
+}
+
 @media (max-width: 800px) {
   .section.secondary {
     padding: 2rem 1rem;
