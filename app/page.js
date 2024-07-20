@@ -24,7 +24,7 @@ export default function Home() {
             <a href="https://github.com/emikjackson/fertilizer-data-prep">data prepared</a> for
             mapping with Python.
           </p>
-          <div class="break" />
+          <div className="break" />
           <p style={{ fontStyle: 'italic' }}>
             Source: Falcone, J.A., 2021, Tabular county-level nitrogen and phosphorus estimates from
             fertilizer and manure for approximately 5-year periods from 1950 to 2017: U.S.

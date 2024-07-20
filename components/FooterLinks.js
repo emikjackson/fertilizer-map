@@ -3,7 +3,9 @@ export default function FooterLinks() {
   const width = 32;
   return (
     <div className="footer">
-      <a className="logo">EJ</a>
+      <a href="https://www.emijackson.com" className="logo">
+        EJ
+      </a>
 
       <a href="https://github.com/emikjackson/fertilizer-map">
         <div className="visually-hidden">Github</div>

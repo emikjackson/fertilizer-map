@@ -59,7 +59,7 @@ export default function Map() {
   const zoom = 4.5;
 
   return (
-    <div class="full-map-wrapper">
+    <div className="full-map-wrapper">
       <MapHeader
         year={year}
         setYear={setYear}
